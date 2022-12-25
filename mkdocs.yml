@@ -1,10 +1,43 @@
-site_name: Test docs
-site_description: 'A docs test'
-site_author: 'Michael Hausenblas'
-docs_dir: docs/
-repo_name: 'mhausenblas/mkdocs-template'
-repo_url: 'https://github.com/mhausenblas/mkdocs-template'
-nav:
-    - Home: index.md
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+site_author: Kristify
+site_description: The documentation for Kristify
+site_name: Kristify Docs
+edit_uri: ''
 theme:
-  name: 'material'
+  icon:
+    repo: fontawesome/brands/git-alt
+  name: material
+  logo: assets/icon.png
+  favicon: assets/icon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+  palette:
+    # Palette toggle for light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: teal
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: teal
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+plugins:
+  - search:
+      lang: en
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Kristify/kristify
+      name: Kristify on GitHub
+  generator: false
+repo_url: https://github.com/Kristify/kristify
+repo_name: Kristify
