@@ -45,6 +45,19 @@
               </div>
 
               <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="monitorInput" v-model="monitor" requried />
+                <div class="invalid-feedback">This field is required.</div>
+                <label for="monitorInput">Monitor side</label>
+                <div class="form-text pt-0 pb-3">The network name of the monitor, or the side it is on</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="taglineInput" v-model="tagline" />
+                <label for="taglineInput">Tag line</label>
+                <div class="form-text pt-0 pb-3">The tagline of the shop!</div>
+              </div>
+
+              <div class="form-floating mb-3">
                 <input type="text" class="form-control rounded-3" id="selfInput" v-model="self" required />
                 <div class="invalid-feedback">This field is required.</div>
                 <label for="selfInput">Turtle network name</label>

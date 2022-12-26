@@ -19,6 +19,8 @@ createApp({
       webhookType: '1',
       webhook: '',
       result: '',
+      monitor: '',
+      tagline: '',
     };
   },
 
@@ -38,6 +40,8 @@ createApp({
 return {
   pkey = "${this.pkey}",
   name = "${this.name}",
+  monSide = "${this.monitor}",
+  tagline = "${this.tagline}",
   storage = {
 ${this.getStorage()}
   },
