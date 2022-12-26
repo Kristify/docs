@@ -21,6 +21,20 @@ The ability to run a shop without a name will come later on.
 ??? example
     `cats`
 
+### Monitor (`monSide`)
+
+The side, or networkID of the monitor you want to display the shop on.
+
+??? example
+    `top`
+
+### Tag line (`tagline`)
+
+The tagline of your shop! This will be displayed under the title.
+
+??? example
+    `World's best shop!!!`
+
 ### Turtle Network ID (`self`)
 
 When you connect your turtle to your chest network with a modem, there should come a network name in chat for each component.
@@ -82,7 +96,19 @@ This message will be sent together with the change.
 ??? example
     `message=Here is your change! Thanks for using our shop.`
 
-### Sounds
+### Speakers (`speakers`)
+
+Speakers is a table of speakers. It is in the format of network ids.
+
+??? example
+    ```lua
+    {
+        "speaker_0",
+        "speaker_1"
+    }
+    ```
+
+### Sounds (`sounds`)
 
 Sounds is a table of different sounds that will be played at different events.
 
