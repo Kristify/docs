@@ -41,3 +41,11 @@ extra:
   generator: false
 repo_url: https://github.com/Kristify/kristify
 repo_name: Kristify
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
