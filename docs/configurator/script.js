@@ -43,11 +43,11 @@ ${this.getStorage()}
   },
   self = "${this.self}",
   messages = {
-    noMetaname      = "${this.noMetaname}",
-    nonexistantItem = "${this.nonexistantItem}",
-    notenoughMoney  = "${this.notenoughMoney}",
-    notenoughStock  = "${this.notenoughStock}",
-    change          = "${this.change}"
+    noMetaname      = "${this.noMetaname || 'message=No metaname found! Refunding.'}",
+    nonexistantItem = "${this.nonexistantItem || 'message=The item you requested is not available for purchase'}",
+    notenoughMoney  = "${this.notenoughMoney || 'message=Insufficient amount of krist sent.'}",
+    notenoughStock  = "${this.notenoughStock || "message=We don't have that much stock!"}",
+    change          = "${this.change || 'message=Here is your change! Thanks for using our shop.'}"
   },
   webhooks = {
     {

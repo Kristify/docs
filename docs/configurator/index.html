@@ -17,138 +17,150 @@
     <div class="modal position-static d-block bg-info py-5" tabindex="-1" role="dialog" id="main">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-4 shadow">
-          <div class="modal-body p-5 pt-0 pb-0">
-            <div class="modal-header p-5 pb-1 border-bottom-0">
-              <h1 class="fw-bold mb-0 fs-2">Kristify Configurator</h1>
-            </div>
-            <div class="modal-header pt-0 p-5 pb-1 border-bottom-0">
-              <h3 class="pb-3">General</h3>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="pkeyInput" v-model="pkey" />
-              <label for="pkeyInput">Private key</label>
-              <div class="form-text pt-0 pb-3">
-                In the
-                <a href="https://docs.krist.dev/docs/wallet-formats.html#kristwallet-format">kristwallet format.</a>
-                We will never share your privatekey with anyone, nor should you!
+          <form class="was-validated">
+            <div class="modal-body p-5 pt-0 pb-0">
+              <div class="modal-header p-5 pb-1 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Kristify Configurator</h1>
               </div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="nameInput" v-model="name" />
-              <label for="nameInput">Krist name</label>
-              <div class="form-text pt-0 pb-3">The krist name you want your shop to manage. Without .kst.</div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="selfInput" v-model="self" />
-              <label for="selfInput">Turtle network name</label>
-              <div class="form-text pt-0 pb-3">The network name of the turtle</div>
-            </div>
-
-            <hr />
-
-            <div class="modal-header pt-0 p-5 pb-1 border-bottom-0">
-              <h3 class="pb-3">Storage</h3>
-            </div>
-
-            <div class="form-floating mb-3" v-for="index in storageFields">
-              <input type="text" class="form-control rounded-3" id="chestID" v-model="this.storage[index - 1]" />
-              <label for="chestID">Chest network name</label>
-              <div class="form-text pt-0 pb-3">The network name of a storage chest</div>
-            </div>
-
-            <div class="btn-group pb-4" role="group">
-              <button type="button" class="btn btn-primary" @click="storageFields++">Add another field</button>
-              <button type="button" class="btn btn-danger" @click="storageFields--">Remove a field</button>
-            </div>
-
-            <hr />
-
-            <div class="modal-header pt-2 p-5 pb-1 border-bottom-0">
-              <h3 class="pb-3">Messages</h3>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="noMetaname" v-model="noMetaname" />
-              <label for="noMetaname">No metaname</label>
-              <div class="form-text pt-0 pb-3">Message to send when user didn't supply metaname</div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="nonexistantItem" v-model="nonexistantItem" />
-              <label for="nonexistantItem">Nonexistant Item</label>
-              <div class="form-text pt-0 pb-3">Message to send when item the user wanted does not exist</div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="notenoughMoney" v-model="notenoughMoney" />
-              <label for="notenoughMoney">Not enough money</label>
-              <div class="form-text pt-0 pb-3">Message to send when the user didn't send enough money</div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="notenoughStock" v-model="notenoughStock" />
-              <label for="notenoughStock">Not enough stock</label>
-              <div class="form-text pt-0 pb-3">Message to send when the shop dosen't have enough stock</div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="change" v-model="change" />
-              <label for="change">Change</label>
-              <div class="form-text pt-0 pb-3">Message to send along with the change</div>
-            </div>
-
-            <hr />
-
-            <div class="modal-header pt-2 p-5 pb-1 border-bottom-0">
-              <h3 class="pb-3">Sounds</h3>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="sfxStarted" v-model="startedSound" />
-              <label for="sfxStarted">Started</label>
-              <div class="form-text pt-0 pb-3">Sound to play when the shop gets started</div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="sfxPurchase" v-model="purchaseSound" />
-              <label for="sfxPurchase">Purchase</label>
-              <div class="form-text pt-0 pb-3">Sound to play when there was a purchase</div>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control rounded-3" id="sfxError" v-model="errorSound" />
-              <label for="sfxError">Error</label>
-              <div class="form-text pt-0 pb-3">Sound to play when there was a error</div>
-            </div>
-
-            <hr />
-
-            <div class="modal-header pt-2 p-5 pb-1 border-bottom-0">
-              <h3 class="pb-3">Webhooks</h3>
-            </div>
-
-            <div class="input-group mb-3 pb-4">
-              <div class="container w-auto">
-                <select class="form-select" v-model="webhookType">
-                  <option selected value="1">Webhook Type</option>
-                  <option value="discord-modern">Discord (embed)</option>
-                  <option value="discord">Discord Classic</option>
-                  <option value="googleChat">Google Chat</option>
-                </select>
+              <div class="modal-header pt-0 p-5 pb-1 border-bottom-0">
+                <h3 class="pb-3">General</h3>
               </div>
 
-              <input type="text" class="form-control rounded-3" id="webhookURL" placeholder="URL" v-model="webhook" />
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="pkeyInput" v-model="pkey" required />
+                <div class="invalid-feedback">This field is required.</div>
+                <label for="pkeyInput">Private key</label>
+                <div class="form-text pt-0 pb-3">
+                  In the
+                  <a href="https://docs.krist.dev/docs/wallet-formats.html#kristwallet-format">kristwallet format.</a>
+                  We will never share your privatekey with anyone, nor should you!
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="nameInput" v-model="name" required />
+                <div class="invalid-feedback">This field is required.</div>
+                <label for="nameInput">Krist name</label>
+                <div class="form-text pt-0 pb-3">The krist name you want your shop to manage. Without .kst.</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="selfInput" v-model="self" required />
+                <div class="invalid-feedback">This field is required.</div>
+                <label for="selfInput">Turtle network name</label>
+                <div class="form-text pt-0 pb-3">The network name of the turtle</div>
+              </div>
+
+              <hr />
+
+              <div class="modal-header pt-0 p-5 pb-1 border-bottom-0">
+                <h3 class="pb-3">Storage</h3>
+              </div>
+
+              <div class="form-floating mb-3" v-for="index in storageFields">
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="chestID"
+                  v-model="this.storage[index - 1]"
+                  required
+                />
+                <div class="invalid-feedback">This field is required.</div>
+                <label for="chestID">Chest network name</label>
+                <div class="form-text pt-0 pb-3">The network name of a storage chest</div>
+              </div>
+
+              <div class="btn-group pb-4" role="group">
+                <button type="button" class="btn btn-primary" @click="storageFields++">Add another field</button>
+                <button type="button" class="btn btn-danger" @click="storageFields--">Remove a field</button>
+              </div>
+
+              <hr />
+
+              <div class="modal-header pt-2 p-5 pb-1 border-bottom-0">
+                <h3 class="pb-3">Messages</h3>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="noMetaname" v-model="noMetaname" />
+                <label for="noMetaname">No metaname</label>
+                <div class="form-text pt-0 pb-3">Message to send when user didn't supply metaname</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="nonexistantItem" v-model="nonexistantItem" />
+                <label for="nonexistantItem">Nonexistant Item</label>
+                <div class="form-text pt-0 pb-3">Message to send when item the user wanted does not exist</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="notenoughMoney" v-model="notenoughMoney" />
+                <label for="notenoughMoney">Not enough money</label>
+                <div class="form-text pt-0 pb-3">Message to send when the user didn't send enough money</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="notenoughStock" v-model="notenoughStock" />
+                <label for="notenoughStock">Not enough stock</label>
+                <div class="form-text pt-0 pb-3">Message to send when the shop dosen't have enough stock</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="change" v-model="change" />
+                <label for="change">Change</label>
+                <div class="form-text pt-0 pb-3">Message to send along with the change</div>
+              </div>
+
+              <hr />
+
+              <div class="modal-header pt-2 p-5 pb-1 border-bottom-0">
+                <h3 class="pb-3">Sounds</h3>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="sfxStarted" v-model="startedSound" />
+                <label for="sfxStarted">Started</label>
+                <div class="form-text pt-0 pb-3">Sound to play when the shop gets started</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="sfxPurchase" v-model="purchaseSound" />
+                <label for="sfxPurchase">Purchase</label>
+                <div class="form-text pt-0 pb-3">Sound to play when there was a purchase</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="sfxError" v-model="errorSound" />
+                <label for="sfxError">Error</label>
+                <div class="form-text pt-0 pb-3">Sound to play when there was a error</div>
+              </div>
+
+              <hr />
+
+              <div class="modal-header pt-2 p-5 pb-1 border-bottom-0">
+                <h3 class="pb-3">Webhooks</h3>
+              </div>
+
+              <div class="input-group mb-3 pb-4">
+                <div class="container w-auto">
+                  <select class="form-select" v-model="webhookType">
+                    <option selected value="1">Webhook Type</option>
+                    <option value="discord-modern">Discord (embed)</option>
+                    <option value="discord">Discord Classic</option>
+                    <option value="googleChat">Google Chat</option>
+                  </select>
+                </div>
+
+                <input type="text" class="form-control rounded-3" id="webhookURL" placeholder="URL" v-model="webhook" />
+              </div>
+
+              <hr />
+
+              <button type="button" class="btn btn-primary mb-5" @click="generate">Generate config</button>
+
+              <pre>{{result}}</pre>
             </div>
-
-            <hr />
-
-            <button type="button" class="btn btn-primary mb-5" @click="generate">Generate config</button>
-
-            <pre>{{result}}</pre>
-          </div>
+          </form>
         </div>
       </div>
     </div>
