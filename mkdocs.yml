@@ -10,6 +10,7 @@ theme:
   logo: assets/icon.png
   favicon: assets/icon.png
   features:
+    - navigation.top
     - navigation.instant
     - navigation.tracking
   palette:
