@@ -63,7 +63,8 @@ ${this.getStorage()}
     started = "${this.startedSound}",
     purchase = "${this.purchaseSound}",
     error = "${this.errorSound}"
-  }
+  },
+  speakers = {}
 }
       `;
     },
