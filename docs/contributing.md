@@ -9,7 +9,7 @@ We love help in the aspect of code! This is based around Git and GitHub. There a
 ## Documentation contributions
 
 Documentation is very important for any good project. We may not always be good at writing documentation, and your help is very welcome!
-This is also based around on GitHub. This is in the repo `kristify/kristify.github.io`
+This is also based around on GitHub. This is in the repo [kristify/kristify.github.io](https://github.com/Kristify/kristify.github.io/)
 
 ## Help others
 
@@ -23,4 +23,4 @@ The addresses to the different maintainers are listed below:
 | Maintainer | Krist address |
 |------------|---------------|
 | PC_Cat     | `katpcscili`  |
-| 1Turtle / Sammy | ????????|
+| Sammy (1Turtle) | `khtsmlh67e` |
