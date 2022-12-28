@@ -56,7 +56,7 @@ ${this.getStorage()}
   webhooks = {
     {
       type = "${this.webhookType}",
-      url = "${this.webhook}"
+      URL = "${this.webhook}"
     }
   },
   sounds = {
