@@ -35,6 +35,17 @@ createApp({
       return lines.join('\n');
     },
 
+    getWebhooks() {
+      if (this.webhookType == '1') {
+        return '{}';
+      }
+
+      return `{
+    type = "${this.webhookType}",
+    URL = "${this.webhook}"
+  }`;
+    },
+
     generate() {
       this.result = `
 return {
@@ -53,12 +64,7 @@ ${this.getStorage()}
     notenoughStock  = "${this.notenoughStock || "message=We don't have that much stock!"}",
     change          = "${this.change || 'message=Here is your change! Thanks for using our shop.'}"
   },
-  webhooks = {
-    {
-      type = "${this.webhookType}",
-      URL = "${this.webhook}"
-    }
-  },
+  webhooks = ${this.getWebhooks()},
   sounds = {
     started = "${this.startedSound}",
     purchase = "${this.purchaseSound}",
