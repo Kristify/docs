@@ -1,12 +1,12 @@
 # Glossary
 
-There are a few words used in the wiki, and in Kristify. Those are explained here.
+Here are a few words explained that you should know:  
 
 | Word     | Meaning                                                                                                                           |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | Krist    | Krist is a virtual economy!                                                                                                       |
-| Kristly  | Kristly is a lua library to interact with krist                                                                                   |
-| Kristify | Either the software (the shop) or the team name                                                                                   |
+| Krist**ly**  | Kristly is a lua library to interact with krist                                                                                   |
+| Krist**ify** | Either the software (the shop) or the team name                                                                                   |
 | Docs     | Documentation. What you are reading right now                                                                                     |
 | Metaname | Metaname is the part in a krist address that is before the @.                                                                     |
 | Name     | In the context of krist, a name is sortof like a domain. We also use `name` this to signalify the metaname you should use to pay. |

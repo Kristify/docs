@@ -1,6 +1,6 @@
 # Configuration
 
-!!! note
+!!! 👉 Note: 
     You can use the [web-configurator](https://kristify.madefor.cc/configurator).
     It let's you configure Kristify, with a GUI!
 
