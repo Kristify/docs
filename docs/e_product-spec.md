@@ -2,7 +2,7 @@
 
 Here is the specification for products.lua
 
-!!! 👉 Note: 
+!!! note
     You can use the [product generator](https://kristify.madefor.cc/productgen).
     It let's you configure products, with a GUI!
 

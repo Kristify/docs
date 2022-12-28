@@ -1,6 +1,6 @@
 # Configuration
 
-!!! 👉 Note: 
+!!! note
     You can use the [web-configurator](https://kristify.madefor.cc/configurator).
     It let's you configure Kristify, with a GUI!
 
@@ -136,15 +136,15 @@ This sound will be played when the shop received a invalid purchase.
 ### Webhooks (`webhooks`)
 
 Webhooks is a table with webhooks.
-There are currently three different webhook types
+There are currently three different webhook types:  
 
-* discord-modern
-* discord
-* googleChat
+* discord-modern  
+* discord  
+* googleChat  
 
 Along with the type you also have to supply a URL.
 
-Please see the example below
+Please see the example below:
 
 !!! example
     ```lua
