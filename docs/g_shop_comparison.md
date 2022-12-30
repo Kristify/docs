@@ -1,5 +1,6 @@
 # Shop comparison
 
+Updated: 30/12-22
 This is a comparison between different shop software for modern minecraft versions.
 
 |                              | Kristify                                            | MSKS | Denarius |
@@ -31,4 +32,4 @@ This is a comparison between different shop software for modern minecraft versio
 | Remote control               | No                                                  |
 | Credits required             | Not required                                        |
 | Uses github                  | Yes                                                 |
-| Documentation                | Extensive                                           |
+| Documentation                | 994 lines                                           |
