@@ -29,3 +29,10 @@ The ID of the item you want to sell.
 ### Metaname (`metaname`)
 
 The part the customer will pay to (before @name.kst)
+
+### NBT Hash (`nbt`)
+
+NBT Hash of the item if it has one. This field is optional and can be nil.
+
+??? example
+    `704a1bcdf9953c791651a77b1fe78891` (hash of Mending book)
