@@ -5,6 +5,7 @@ createApp({
     return {
       displayName: '',
       price: 0,
+      color: 'nil',
       id: '',
       metaname: '',
       result: '',
@@ -17,6 +18,7 @@ createApp({
 {
   displayName = "${this.displayName}",
   price = ${this.price},
+  color = ${this.color},
   id = "${this.id}",
   metaname = "${this.metaname}",
 }

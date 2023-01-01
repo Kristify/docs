@@ -10,12 +10,12 @@
 
 The privatekey is the key to your krist wallet. This will be used for refunding.
 You should never share this with anyone, nor will Kristify.
-The privatekey is only ever transferred to krist.dev (the offical krist server).
+The privatekey is only ever transferred to krist.dev *(the offical krist server)*.
 
 ### Krist name (`name`)
 
 The krist name to use with the shop. Payments will be sent to this name.
-You should not include `.kst`! A krist name can be purchased for 500kst.
+You should not include `.kst`! A krist name can be purchased for **500kst**.
 The ability to run a shop without a name will come later on.
 
 ??? example

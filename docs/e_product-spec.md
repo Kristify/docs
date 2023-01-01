@@ -1,12 +1,12 @@
 # Products.lua spec
 
-Here is the specification for products.lua
+Here are the specifications for `products.lua`
 
 !!! note
     You can use the [product generator](https://kristify.madefor.cc/productgen).
     It let's you configure products, with a GUI!
 
-Products.lua is a lua file which returns a table, which contains products (which are tables).
+`products.lua` is a lua file which returns a table. This contains the products *(which are tables as well)*.
 
 ## Fields
 
@@ -19,7 +19,13 @@ The name of the item you want to sell. This will appear on the monitor
 The price per item in krist. If you want multiple items per krist you can set it to a decimal number.
 Example: If you want four items per krist then you set it to `0.25`
 
-### Minecraft name (`id`)
+### Price (`color`)
+
+The color of the Display Name. _**(optional)**_ Can be any color from the color API as string.
+Example: "red" or "blue" or nil, for the Themes default preference.
+Note: This option can be ignored by the theme.
+
+### Minecraft Item ID (`id`)
 
 The ID of the item you want to sell.
 
