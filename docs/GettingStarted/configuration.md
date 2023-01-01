@@ -1,8 +1,12 @@
 # Configuration
 
+Each shop contains a `config.lua` file, which configues important basics like the private key for refunds or the name.
+
 !!! note
     You can use the [web-configurator](https://kristify.madefor.cc/configurator).
     It let's you configure Kristify, with a GUI!
+
+Location: `<kristify>/data/config.lua`
 
 ## Fields
 

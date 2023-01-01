@@ -1,12 +1,12 @@
-# Products.lua spec
+# Products 
 
-Here are the specifications for `products.lua`
+Products that can be purchased in the shop are defined in `products.lua`. The specifications will be here explained.
 
 !!! note
     You can use the [product generator](https://kristify.madefor.cc/productgen).
     It let's you configure products, with a GUI!
 
-`products.lua` is a lua file which returns a table. This contains the products *(which are tables as well)*.
+`<kristify>/data/products.lua` is a lua file which returns a table. This contains the products *(which are tables as well)*. Those "sub-tables" can be generated with the link above.
 
 ## Fields
 

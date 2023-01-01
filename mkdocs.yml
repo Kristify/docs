@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_author: Kristify
-site_description: The documentation for Kristify
+site_author: Kristify Team
+site_description: The documentation for Kristify!
 site_name: Kristify Docs
 edit_uri: ''
 theme:
@@ -50,3 +50,16 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+nav:
+  - index.md
+  - Getting Started:
+      - 'GettingStarted/installation.md'
+      - 'GettingStarted/configuration.md'
+      - 'GettingStarted/product-spec.md'
+  - Theme:
+      - 'Theme/customization.md'
+      - "Theme/layout.md"
+  - About Kristify:
+      - 'About/contributing.md'
+      - 'About/shop_comparison.md'
+      - 'About/glossary.md'

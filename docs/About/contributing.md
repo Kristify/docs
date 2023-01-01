@@ -1,6 +1,6 @@
 # Contributing
 
-Want to help develop Kristify? Or just want to say thanks? You have come to the right place
+Want to help develop Kristify? Or just want to say thanks? Then this is the right place!
 
 ## Code contributions
 
@@ -8,8 +8,8 @@ We love help in the aspect of code! This is based around Git and GitHub. There a
 
 ## Documentation contributions
 
-Documentation is very important for any good project. We may not always be good at writing documentation, and your help is very welcome!
-This is also based around on GitHub. This is in the repo [kristify/kristify.github.io](https://github.com/Kristify/kristify.github.io/)
+Documentation is very important for any good project. We may not always be good at writing documentation, and your help to change this is welcome!
+This is also based around on GitHub. (See repo [kristify/kristify.github.io](https://github.com/Kristify/kristify.github.io/))
 
 ## Help others
 
