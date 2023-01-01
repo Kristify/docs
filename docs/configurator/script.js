@@ -52,6 +52,7 @@ return {
   pkey = "${this.pkey}",
   name = "${this.name}",
   monSide = "${this.monitor}",
+  monScale = 0.5,
   tagline = "${this.tagline}",
   storage = {
 ${this.getStorage()}
