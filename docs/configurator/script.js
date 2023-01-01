@@ -68,7 +68,8 @@ ${this.getStorage()}
   sounds = {
     started = "${this.startedSound}",
     purchase = "${this.purchaseSound}",
-    error = "${this.errorSound}"
+    error = "${this.errorSound}",
+    volume = 1
   },
   speakers = {}
 }
