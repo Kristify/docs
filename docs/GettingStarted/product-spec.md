@@ -8,6 +8,8 @@ Products that can be purchased in the shop are defined in `products.lua`. The sp
 
 `<kristify>/data/products.lua` is a lua file which returns a table. This contains the products *(which are tables as well)*. Those "sub-tables" can be generated with the link above.
 
+---
+
 ## Fields
 
 ### Display name (`displayName`)

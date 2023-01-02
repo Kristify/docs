@@ -1,9 +1,12 @@
 # Home
 
-Welcome to the kristify documentation!
-Here you will find anything you need to know to set up your own shop!
+Welcome to the kristify documentation!  
+Kristify lets you maitnain your shop in Minecraft easily while keeping full customization!
 
+Here you will find anything you need to know to set up your own shop!  
 Feel free to navigate around with the sidebar on the left.
+
+---
 
 _Look at the masterpiece of a teaser here!_
 

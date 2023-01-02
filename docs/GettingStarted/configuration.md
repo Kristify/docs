@@ -8,6 +8,8 @@ Each shop contains a `config.lua` file, which configues important basics like th
 
 Location: `<kristify>/data/config.lua`
 
+---
+
 ## Fields
 
 ### Privatekey (`pkey`)
