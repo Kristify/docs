@@ -9,10 +9,19 @@ createApp({
       id: '',
       metaname: '',
       result: '',
+      nbt: '',
     };
   },
 
   methods: {
+    generateNBT() {
+      if (this.nbt != '') {
+        return `  nbt = ${this.nbt}`;
+      }
+
+      return '';
+    },
+
     generate() {
       this.result = `
 {
@@ -21,6 +30,7 @@ createApp({
   color = ${this.color},
   id = "${this.id}",
   metaname = "${this.metaname}",
+${this.generateNBT()}
 }
       `;
     },
