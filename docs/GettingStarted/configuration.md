@@ -148,7 +148,14 @@ There are currently three different webhook types:
 * discord  
 * googleChat  
 
-Along with the type you also have to supply a URL.
+Along with the type you also have to supply a URL, and on events it will fire.
+
+The available events are:
+
+* purchase
+* invalid
+
+The purchase event is trigged on a purchase, while invalid is triggered on a invalid purchase.
 
 Please see the example below:
 
@@ -157,7 +164,8 @@ Please see the example below:
     webhooks = {
       {
         type = "discord-modern",
-        url = "https://discord.com/api/webhook/blablabla-token-blablalbalb"
+        URL = "https://discord.com/api/webhook/blablabla-token-blablalbalb",
+        events = {"purchase", "invalid"}
       }
     }
     ```
