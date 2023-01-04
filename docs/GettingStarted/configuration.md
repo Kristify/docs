@@ -139,6 +139,19 @@ This sound will be played when the shop received a invalid purchase.
 ??? example
     `minecraft:block.anvil.land`
 
+### Redstone Pulses (`redstonePulse`)
+
+Kristify can do redstone pulses to make for example a redstone lamp flash.
+The redstone pulse field should have a table that contains `delay` and a tablearray that contains sides.
+
+!!! example
+    ```lua
+    redstonePulse = {
+      delay = 3,
+      sides = { "right" }
+    }
+    ```
+
 ### Webhooks (`webhooks`)
 
 Webhooks is a table with webhooks.
