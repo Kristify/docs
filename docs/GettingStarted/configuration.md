@@ -81,14 +81,14 @@ This messge will be sent when the customer has sent payment to a item, which doe
 ??? example
     `message=The item you requested is not available for purchase`
 
-#### Not enogth money (`notEnogthMoney`)
+#### Not enough money (`notEnoughMoney`)
 
 This message will be sent when the customer has sent too little krist.
 
 ??? example
     `message=Insufficient amount of krist sent.`
 
-#### Not enogth stock (`notEnogthStock`)
+#### Not enough stock (`notEnoughStock`)
 
 This message will be sent when the customer has sent more krist, than stock available.
 
