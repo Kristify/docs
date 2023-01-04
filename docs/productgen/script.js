@@ -16,7 +16,7 @@ createApp({
   methods: {
     generateNBT() {
       if (this.nbt != '') {
-        return `  nbt = ${this.nbt}`;
+        return `  nbt = "${this.nbt}"`;
       }
 
       return '';
