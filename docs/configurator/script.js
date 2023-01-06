@@ -40,10 +40,10 @@ createApp({
         return '{}';
       }
 
-      return `{
+      return `{{
     type = "${this.webhookType}",
     URL = "${this.webhook}"
-  }`;
+  }}`;
     },
 
     generate() {
