@@ -3,33 +3,33 @@
 Updated: 30/12-22
 This is a comparison between different shop software for modern minecraft versions.
 
-|                              | Kristify                                            | MSKS | Denarius |
-| ---------------------------- | --------------------------------------------------- | ---- | -------- |
-| Author                       | Kristify team (PC_Cat, Sammy)                       |
-| License                      | MIT                                                 |
-| Website                      | [kristify.madefor.cc](https://kristify.madefor.cc/) |
-| Dependencies                 | Automatically installed                             |
-| All dependencies opensource? | Yes                                                 |
-| GUI Type                     | Ingame monitor                                      |
-| Custom GUI                   | Yes. XML based.                                     |
-| GUI displays                 | Item name, stock, price per unit, metaname          |
-| Refunds                      | Wrong metaname, stock, underpay, change             |
-| Customizable refund messages | Yes                                                 |
-| Toggleable refunds           | No                                                  |
-| Inventories adjecent         | No                                                  |
-| On storage network           | Yes                                                 |
-| Krist connection type        | Websocket and HTTP                                  |
-| Requires krist name          | Yes                                                 |
-| Automatic profit forwarding  | Yes                                                 |
-| Redstone heartbeats          | No                                                  |
-| Sales statistics             | No                                                  |
-| Updates                      | Fully manual                                        |
-| Notifications                | Discord, Discord Embed, Google Chat                 |
-| Notification types           | Purchase                                            |
-| Restart on error             | No                                                  |
-| Configuration type           | Lua table                                           |
-| Configuration helper         | Website                                             |
-| Remote control               | No                                                  |
-| Credits required             | Not required                                        |
-| Uses github                  | Yes                                                 |
-| Documentation                | 994 lines                                           |
+|                              | Kristify                                            | MSKS                                                           | Denarius                                                                                 |
+| ---------------------------- | --------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Author                       | Kristify team (PC_Cat, Sammy)                       | MasonGulu                                                      | Marcus Wenzel                                                                            |
+| License                      | MIT                                                 | No License                                                     | MIT                                                                                      |
+| Website                      | [kristify.madefor.cc](https://kristify.madefor.cc/) | [github.com/MasonGulu/msks](https://github.com/MasonGulu/msks) | [github.com/Snowflake-Software/denarius](https://github.com/Snowflake-Software/denarius) |
+| Dependencies                 | Automatically installed                             | Automatically installed                                        | Manually installed                                                                       |
+| All dependencies opensource? | Yes                                                 | Yes                                                            | Yes                                                                                      |
+| GUI Type                     | Ingame monitor                                      |                                                                |                                                                                          |
+| Custom GUI                   | Yes. XML based.                                     |                                                                |                                                                                          |
+| GUI displays                 | Item name, stock, price per unit, metaname          |                                                                |                                                                                          |
+| Refunds                      | Wrong metaname, stock, underpay, change             |                                                                |                                                                                          |
+| Customizable refund messages | Yes                                                 |                                                                |                                                                                          |
+| Toggleable refunds           | No                                                  |                                                                |                                                                                          |
+| Inventories adjecent         | No                                                  |                                                                |                                                                                          |
+| On storage network           | Yes                                                 |                                                                |                                                                                          |
+| Krist connection type        | Websocket and HTTP                                  |                                                                |                                                                                          |
+| Requires krist name          | Yes                                                 |                                                                |                                                                                          |
+| Automatic profit forwarding  | Yes                                                 |                                                                |                                                                                          |
+| Redstone heartbeats          | No                                                  |                                                                |                                                                                          |
+| Sales statistics             | No                                                  |                                                                |                                                                                          |
+| Updates                      | Fully manual                                        |                                                                |                                                                                          |
+| Notifications                | Discord, Discord Embed, Google Chat                 |                                                                |                                                                                          |
+| Notification types           | Purchase                                            |                                                                |                                                                                          |
+| Restart on error             | No                                                  |                                                                |                                                                                          |
+| Configuration type           | Lua table                                           |                                                                |                                                                                          |
+| Configuration helper         | Website                                             |                                                                |                                                                                          |
+| Remote control               | No                                                  |                                                                |                                                                                          |
+| Credits required             | Not required                                        |                                                                |                                                                                          |
+| Uses github                  | Yes                                                 | Yes                                                            | Yes                                                                                      |
+| Documentation                | 994 lines                                           | 156 lines                                                      | 98 lines                                                                                 |
