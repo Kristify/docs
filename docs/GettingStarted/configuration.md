@@ -182,3 +182,70 @@ Please see the example below:
       }
     }
     ```
+
+### ShopSync (`shopSync`)
+
+[ShopSync](https://p.sc3.io/7Ae4KxgzAM) is a protocol for broadcasting shop information & prices over modems developed by 6_4.
+
+#### Enabled (`enabled`)
+
+Boolean value that enables the broadcast of ShopSync data.
+
+??? example
+`true`
+
+#### Modem (`modem`)
+
+The modem that ShopSync data will broadcast over. If left blank, it will attempt to automatically find an ender or wireless modem.
+
+??? example
+`"right"`
+
+#### Owner (`owner`)
+
+The owner of the shop, typically a username.
+
+??? example
+`"Yemmel"`
+
+#### Multiple Shops (`multiShop`)
+
+If multiple shops are ran off of the same computer, this should be an integer value counting up from 1. Otherwise, this should be left nil.
+
+??? example
+`nil`
+
+#### Location (`location`)
+
+The location of the shop, described in coordinates and/or text.
+
+##### Broadcast Location (`broadcastLocation`)
+
+Boolean value that determines whether location information is broadcast.
+
+??? example
+`true`
+
+##### Coordinates (`coordinates`)
+
+The coordinates of the shop. If left at defaults, and `broadcastLocation` is true, GPS may be used to determine the location of the shop.
+
+??? example
+`{ 138, 75, 248 }`
+
+##### Description (`description`)
+
+A text description of the shop's location.
+
+??? example
+`"North of spawn, just outside Immediate Spawn Area."`
+
+##### Dimension (`dimension`)
+
+Dimension the shop is located in. It can be one of the following:
+* overworld
+* nether
+* end
+
+??? example
+`"overworld"`
