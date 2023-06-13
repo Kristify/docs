@@ -17,11 +17,11 @@ Want to help others who have problems with kristify? That's awesome! Join our di
 
 ## Krist contributions
 
-Kristify is a shop, that let's you trade items for krist. You can support the maintiners with krist, if you have lots of that.
+Kristify is a shop, that lets you trade items for krist. You can support the maintainers with krist, if you have lots of that.
 The addresses to the different maintainers are listed below:
 
 | Maintainer      | Krist address | Krist.club link                                                                                                            |
-| --------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------- |
+|-----------------|---------------|----------------------------------------------------------------------------------------------------------------------------|
 | PC_Cat (Erb3)   | `katpcscili`  | [PC_Cat on krist.club](https://krist.club/send?to=katpcscili&metadata=message%3DDonation+%28Kristify%29)                   |
 | Sammy (1Turtle) | `khtsmlh67e`  | [Sammy on krist.club](https://krist.club/send?to=khtsmlh67e&metadata=donate%3Dtrue%3Bdonation%3Dtrue%3Bmessage%3DKristify) |
 

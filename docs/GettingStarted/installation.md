@@ -11,7 +11,7 @@ This should open a GUI and guide you through the installing progress of Kristify
   
 ---
 
-After the installation is done, you still need to setup a few things:  
+After the installation is done, you still need to set up a few things:  
 
 1.   Setup physical stuff *(description below)*  
 2.   Configuration *(See [docs](https://kristify.madefor.cc/d_configuration/))*  
@@ -21,7 +21,7 @@ Step **2** and **3** will be explained in their corresponding docs page *(see li
   
 ---
 
-You should now have a Turtle with Kristify installed on it. Great! Now its time to place the following things. Kristify **needs** the following parts:  
+You should now have a Turtle with Kristify installed on it. Great! Now it's time to place the following things. Kristify **needs** the following parts:  
 
  - **Monitor** *(Minimum 5x3 large)*  
  - **Chests** *(Connect as much as you need)*  
@@ -30,13 +30,13 @@ You should now have a Turtle with Kristify installed on it. Great! Now its time 
 After connecting them to the network, write down which name they have *(e.g. "monitor_0")*.  
 In addition, you can also connect **speakers** for sound support!  
 
-It doesnt matter how you place all those components. Just make sure they are connected.  
+It doesn't matter how you place all those components. Just make sure they are connected.  
 
-**However**, The Turtle running Kristify should be **only accessable to the shop owner**, and not the customers!
+**However**, The Turtle running Kristify should be **only accessible to the shop owner**, and not the customers!
 *Or else bad things can happen!*  
   
 ---
 
 This was step 1. Easy, right? But before you are done, you now have to generate the configuration and your products!
   
-The config.lua and products.lua files can be now placed in `<kristify_installation/data/`. And thats it!  
+The config.lua and products.lua files can be now placed in `<kristify_installation/data/`. And that's it!  

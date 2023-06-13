@@ -1,10 +1,10 @@
 # Configuration
 
-Each shop contains a `config.lua` file, which configues important basics like the private key for refunds or the name.
+Each shop contains a `config.lua` file, which configures important basics like the private key for refunds or the name.
 
 !!! note
     You can use the [web-configurator](https://kristify.madefor.cc/configurator).
-    It let's you configure Kristify, with a GUI!
+    It lets you configure Kristify, with a GUI!
 
 Location: `<kristify>/data/config.lua`
 
@@ -16,7 +16,7 @@ Location: `<kristify>/data/config.lua`
 
 The privatekey is the key to your krist wallet. This will be used for refunding.
 You should never share this with anyone, nor will Kristify.
-The privatekey is only ever transferred to krist.dev *(the offical krist server)*.
+The privatekey is only ever transferred to krist.dev *(the official krist server)*.
 
 ### Krist name (`name`)
 
@@ -74,9 +74,9 @@ This message will be sent when the customer sent a payment without metaname.
 ??? example
     `message=No metaname found! Refunding.`
 
-#### Nonexistant item (`nonexistantItem`)
+#### Nonexistent item (`nonexistantItem`)
 
-This messge will be sent when the customer has sent payment to a item, which does not exist.
+This message will be sent when the customer has sent payment to an item, which does not exist.
 
 ??? example
     `message=The item you requested is not available for purchase`
@@ -134,7 +134,7 @@ This sound will be played when the shop received a valid purchase.
 
 #### On error (`error`)
 
-This sound will be played when the shop received a invalid purchase.
+This sound will be played when the shop received an invalid purchase.
 
 ??? example
     `minecraft:block.anvil.land`
@@ -168,7 +168,7 @@ The available events are:
 * purchase
 * invalid
 
-The purchase event is trigged on a purchase, while invalid is triggered on a invalid purchase.
+The purchase event is triggered on a purchase, while invalid is triggered on an invalid purchase.
 
 Please see the example below:
 
