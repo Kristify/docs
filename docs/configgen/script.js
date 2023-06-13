@@ -21,6 +21,16 @@ createApp({
       result: '',
       monitor: '',
       tagline: '',
+      ssEnabled: '',
+      ssModem: '',
+      ssOwner: '',
+      ssMultiShop: '',
+      ssLocEnabled: '',
+      ssLocX: '',
+      ssLocY: '',
+      ssLocZ: '',
+      ssLocDesc: '',
+      ssLocDim: ''
     };
   },
 
@@ -72,7 +82,19 @@ ${this.getStorage()}
     error = "${this.errorSound}",
     volume = 1
   },
-  speakers = {}
+  speakers = {},
+  shopSync = {
+    enabled = ${this.ssEnabled},
+    modem = "${this.ssModem}",
+    owner = "${this.ssOwner}",
+    multiShop = ${this.ssMultiShop || "nil"},
+    location = {
+      broadcastLocation = ${this.ssLocEnabled},
+      coordinates = { ${this.ssLocX || "0"}, ${this.ssLocY || "0"}, ${this.ssLocZ || "0"} },
+      description = "${this.ssLocDesc}",
+      dimension = "${this.ssLocDim}"
+    }
+  }
 }
       `;
     },
