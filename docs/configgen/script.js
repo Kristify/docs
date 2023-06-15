@@ -89,7 +89,7 @@ ${this.getStorage()}
     owner = "${this.ssOwner}",
     multiShop = ${this.ssMultiShop || "nil"},
     location = {
-      broadcastLocation = ${this.ssLocEnabled},
+      broadcastLocation = ${this.ssLocEnabled || 'false'},
       coordinates = { ${this.ssLocX || "0"}, ${this.ssLocY || "0"}, ${this.ssLocZ || "0"} },
       description = "${this.ssLocDesc}",
       dimension = "${this.ssLocDim}"
