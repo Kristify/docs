@@ -4,7 +4,7 @@ Products that can be purchased in the shop are defined in `products.lua`. The sp
 
 !!! note
     You can use the [product generator](https://kristify.madefor.cc/productgen).
-    It let's you configure products, with a GUI!
+    It lets you configure products, with a GUI!
 
 `<kristify>/data/products.lua` is a lua file which returns a table. This contains the products *(which are tables as well)*. Those "sub-tables" can be generated with the link above.
 

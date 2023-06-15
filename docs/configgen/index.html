@@ -118,7 +118,7 @@
               <div class="form-floating mb-3">
                 <input type="text" class="form-control rounded-3" id="notenoughStock" v-model="notenoughStock" />
                 <label for="notenoughStock">Not enough stock</label>
-                <div class="form-text pt-0 pb-3">Message to send when the shop dosen't have enough stock</div>
+                <div class="form-text pt-0 pb-3">Message to send when the shop doesn't have enough stock</div>
               </div>
 
               <div class="form-floating mb-3">
@@ -171,6 +171,71 @@
               </div>
 
               <hr />
+
+              <div class="modal-header pt-2 p-5 pb-1 border-bottom-0">
+                <h3 class="pb-3">ShopSync</h3>
+              </div>
+
+              <div class="form-floating mb-3">
+                <select id="ssEnabled" class="form-select" v-model="ssEnabled" required>
+                  <option selected value="true">True</option>
+                  <option value="false">False</option>
+                </select>
+                <label for="ssEnabled">Enabled</label>
+                <div class="form-text pt-0 pb-3">Whether or not ShopSync data should be broadcast</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="ssModem" v-model="ssModem"/>
+                <label for="ssModem">Modem</label>
+                <div class="form-text pt-0 pb-3">Modem to broadcast ShopSync data over</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="ssOwner" v-model="ssOwner"/>
+                <label for="ssOwner">Owner</label>
+                <div class="form-text pt-0 pb-3">Owner of the shop, typically a username.</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="ssMultiShop" v-model="ssMultiShop"/>
+                <label for="ssMultiShop">multiShop ID</label>
+                <div class="form-text pt-0 pb-3">Integer ID of the shop, counting from 1. Only applicable if multiple shops are running on the same computer. <b>If only one shop is running on the computer, leave this value empty!!</b></div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <select id="ssLocEnabled" class="form-select" v-model="ssLocEnabled">
+                  <option selected value="true">True</option>
+                  <option value="false">False</option>
+                </select>
+                <label for="ssLocEnabled">Location Broadcast Enabled</label>
+                <div class="form-text pt-0 pb-3">Whether or not location data should be broadcast</div>
+              </div>
+
+              <label for="ssLoc" class="form-floating mb-3">Shop Coordinates</label>
+              <div id="ssLoc" class="input-group mb-3 pb-4">
+                <input type="text" class="form-control rounded-3" id="ssLocX" v-model="ssLocX" placeholder="X"/>
+                <input type="text" class="form-control rounded-3" id="ssLocY" v-model="ssLocY" placeholder="Y"/>
+                <input type="text" class="form-control rounded-3" id="ssLocZ" v-model="ssLocZ" placeholder="Z"/>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="ssLocDesc" v-model="ssLocDesc"/>
+                <label for="ssLocDesc">Shop Location (Description)</label>
+                <div class="form-text pt-0 pb-3">Text description of the shop's location</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <select id="ssLocDim" class="form-select" v-model="ssLocDim">
+                  <option selected value="overworld">overworld</option>
+                  <option value="nether">nether</option>
+                  <option value="end">end</option>
+                </select>
+                <label for="ssLocDim">Dimension</label>
+                <div class="form-text pt-0 pb-3">Dimension the shop is located in.</div>
+              </div>
+
+              <hr/>
 
               <button type="button" class="btn btn-primary mb-5" @click="generate">Generate config</button>
 
