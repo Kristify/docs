@@ -41,14 +41,6 @@ The tagline of your shop! This will be displayed under the title.
 ??? example
     `World's best shop!!!`
 
-### Turtle Network ID (`self`)
-
-When you connect your turtle to your chest network with a modem, there should come a network name in chat for each component.
-You want the network name of the turtle.
-
-??? example
-    `turtle_163`
-
 ### Storage Chests (`storage`)
 
 This is a table with network names of storage chests.

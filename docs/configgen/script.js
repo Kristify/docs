@@ -5,7 +5,6 @@ createApp({
     return {
       pkey: '',
       name: '',
-      self: '',
       storage: [],
       storageFields: 1,
       noMetaname: '',
@@ -67,7 +66,6 @@ return {
   storage = {
 ${this.getStorage()}
   },
-  self = "${this.self}",
   messages = {
     noMetaname      = "${this.noMetaname || 'message=No metaname found! Refunding.'}",
     nonexistantItem = "${this.nonexistantItem || 'message=The item you requested is not available for purchase'}",
@@ -95,8 +93,7 @@ ${this.getStorage()}
       dimension = "${this.ssLocDim}"
     }
   }
-}
-      `;
+}`;
     },
   },
 }).mount('#main');
