@@ -1,5 +1,12 @@
 # Kristify Documentation
 
+> [!IMPORTANT]
+> With SwitchCraft3 shutting down, we have decided to archive Kristify affective immediately.
+> This means no future updates, fixes, or support.
+> We thank everyone for the ride here.
+
+---
+
 ![mkdocs](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/built-with/mkdocs_vector.svg)
 ![markdown](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/built-with/markdown_vector.svg)
 ![sponge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/unsupported/sponge_vector.svg)
